@@ -1,0 +1,33 @@
+# Summary
+
+* [Introduction](README.md)
+* [Quickstart Guide](quickstart.md)
+* [Preface](introduction.md)
+* [What is Computational Thinking?](computational-thinking.md)
+* Philosophy
+    * [Goals of the Callysto Project](goals.md)
+    * [Software tools - Eat Your Own Dogfood](tools1.md)
+* Notebook Design
+    * [Notebook Format](notebook-format.md)
+    * [Template](notebook-template.md)
+    * [Notebook Reviewer's Guide](reviews.md)
+* [Development Team Structure and Process](teams.md)
+* [Coding](coding.md)
+    * [Jupyter, Under the Hood](under-the-hood.md)
+    * [Best Practices for Code Development](best-practices.md)
+    * [Coding Mistakes to Avoid](bad-practices.md)
+    * [Markdown Language](markdown.md)
+    * [Notebook Binders, Pullers, and Viewers](nbviewers.md)
+    * [Bug Reporting](bug-reporting.md)
+    * [Github Workflow](github-workflow.md)
+    * [Troubleshooting](troubleshooting.md)
+* [Information Visualization](infovis.md)
+    * [Plotting](plotting.md)
+    * [Audio Generation](audio.md)
+    * [Animations - D3.js](animation.md)
+    * [Animations - HTML5](animate-graphs.md)
+    * [Widgets for Interactivity](widgets.md)
+* [Online Resources](internal-links.md)
+    * [Useful Links](useful-links.md)
+    * [Contacts](contacts.md)
+
