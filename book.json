@@ -1,0 +1,9 @@
+{
+
+"plugins": [
+        "mathjax",
+        "mermaid-gb3"
+
+    ],
+"pluginsConfig": {}
+}

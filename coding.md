@@ -1,0 +1,1 @@
+Pull the [Coding Guide notebook](https://github.com/callysto/training-manual/blob/master/CodingGuide.ipynb) or [view it with nbviewer](https://nbviewer.jupyter.org/github/callysto/training-manual/blob/master/CodingGuide.ipynb)
