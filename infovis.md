@@ -37,9 +37,9 @@ Information visualization is a key part of the notebooks. We want to bring visua
     + Not all displays are callibrated corectly, if you use many colours which have to be discriminated from each other, be sure to use [color brewer](http://colorbrewer2.org) to select your colour scheme.
 
 ##### Visual Encoding Principles
-![Analyzing visual Encoding Via Marks and Channels](https://github.com/callysto/training-manual-live/blob/master/images/AnalyzingVisualEncoding.jpeg)
+![Analyzing visual Encoding Via Marks and Channels](images/AnalyzingVisualEncoding.jpeg)
 
-![Channels, Matching Expressiveness](https://github.com/callysto/training-manual-live/blob/master/images/ChannelsMatchingExpressiveness.jpeg)
+![Channels, Matching Expressiveness](images/ChannelsMatchingExpressiveness.jpeg)
 
 Please avoid trying to encode information as 3D volume eor curvature, these are difficult for people to process.
 
@@ -50,7 +50,7 @@ Please avoid trying to encode information as 3D volume eor curvature, these are 
 
 Special note: Although relational data (represented by graphs, networks, trees) is a subset of the above three, it requires different visualization strategies.
 
-![Types of Data](https://github.com/callysto/training-manual-live/blob/master/images/Order.jpeg)
+![Types of Data](images/Order.jpeg)
 
 The strategies at the top of the lists have been shown to be the most effective for visualizing that type of data. Strategies near the bottom of the lists should be avoided. For example hue is great to use for categorical data, shape is less ideal. 
 
