@@ -42,6 +42,9 @@ class MyMagics(Magics):
         self.shell.run_cell(raw_code, store_history=False)
         
 #define more custom magic function here as needed.
+    @line_magic
+    def helloWorld(self, line):
+        print('hello, world!')
 
 ip = get_ipython()
 ip.register_magics(MyMagics)
