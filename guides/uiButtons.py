@@ -33,7 +33,8 @@ class MyMagics(Magics):
 
                     $(document).ready(function () {
                         code_shown = true;
-                        $('div.input').hide()
+                        $('div.input').show();
+                        $('#toggleButton').val('Hide Code')
                     });
                 </script>
                 <input type="submit" id="toggleButton" value="Show Code">
