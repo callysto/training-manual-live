@@ -101,6 +101,8 @@ Containerizes MathBox structures.
 ```
 `MathBox object "plot" is a duplicate ... replacing ...`
 
+---
+
 _magic_ `%%d3` [[`source`]](https://github.com/callysto/nbplus/blob/master/nbvis/magics.py)
 
 Creates a global variable `d3_code` and appends the content of the cell to it for later use in a D3 object class instance. 
@@ -119,6 +121,8 @@ console.log(svg);
 ```
 
 `Code added to D3 visualization stack!`
+
+---
 
 _magic_ `%%mathbox` [[`source`]](https://github.com/callysto/nbplus/blob/master/nbvis/magics.py)
 
