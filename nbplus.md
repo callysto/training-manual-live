@@ -33,6 +33,8 @@ GeoGebra is an interactive mathematics application for visualization and interac
 
 This is a Python [wrapper library](https://en.wikipedia.org/wiki/Wrapper_library) that enables JavaScript-based visualization in Jupyter, and provides a streamlined means of specifying and updating visualization code. We are actively supporting [D3.js](https://d3js.org/) and [MathBox.js](https://github.com/unconed/mathbox).
 
+---
+
 _class_ `classes.D3(name)` [[`source`]](https://github.com/callysto/nbplus/blob/master/nbvis/objects.py)
 
 Containerizes D3 structures.
@@ -65,6 +67,8 @@ Containerizes D3 structures.
 ```
 
 `D3 object "plot" is a duplicate ... replacing ...`
+
+---
 
 _class_ `classes.MathBox(name)` [[`source`]](https://github.com/callysto/nbplus/blob/master/nbvis/classes.py)
 
