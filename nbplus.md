@@ -8,7 +8,7 @@
 All submodules are available via the command line or, using a code cell in a notebook, using
 
 
-```python
+```
 !pip install --upgrade --force-reinstall --quiet --user git+git://github.com/callysto/nbplus.git#egg=nbplus
 ```
 
@@ -166,7 +166,7 @@ Creates a global variable `d3_code` and appends the content of the cell to it fo
 ```
 
 
-```python
+```javascript
 %%d3 --reset --queue
 // a JavaScript comment
 var svg = d3.select("svg");
@@ -190,7 +190,7 @@ Creates a global variable `mathbox_code` and appends the content of the cell to 
 #### Usage:
 
 
-```python
+```javascript
 %%mathbox --queue
 var view = mathbox
   .cartesian({
