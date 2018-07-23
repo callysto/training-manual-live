@@ -5,9 +5,12 @@
 
 ## Getting Started
 
-All submodules are installed via the command line using
+All submodules are available via the command line or, using a code cell in a notebook, using
 
-`pip install --upgrade --force-reinstall --user git+git://github.com/callysto/nbplus.git@staging#egg=nbplus`.
+
+```python
+!pip install --upgrade --force-reinstall --quiet --user git+git://github.com/callysto/nbplus.git#egg=nbplus
+```
 
 Once installed, submodules may be imported separately.
 
@@ -15,8 +18,8 @@ e.g.
 
 
 ```python
-import nblayout.uiButtons
-from nbvis.ggb import *
+from geogebra.ggb import *
+from nbvis.classes import D3, MathBox, Vis
 ```
 
 To contribute, see the [repository](https://github.com/callysto/nbplus).
@@ -31,20 +34,24 @@ GeoGebra is an interactive mathematics application for visualization and interac
 
 ### <a name="nbvis">nbvis</a>
 
-This is a Python [wrapper library](https://en.wikipedia.org/wiki/Wrapper_library) that enables JavaScript-based visualization in Jupyter, and provides a streamlined means of specifying and updating visualization code. We are actively supporting [D3.js](https://d3js.org/) and [MathBox.js](https://github.com/unconed/mathbox).
+This is a Python [wrapper library](https://en.wikipedia.org/wiki/Wrapper_library) for JavaScript-based visualizations in Jupyter, and provides a streamlined means of specifying and updating visualization code. We are actively supporting [D3.js](https://d3js.org/) and [MathBox.js](https://github.com/unconed/mathbox).
+
+A sample guide outlining the creation of a slider bar using `nbvis` is available [here](https://github.com/callysto/training-manual-live/blob/extensions/guides/nbvisGuide.ipynb).
 
 ---
 
-_class_ `classes.D3(name)` [[`source`]](https://github.com/callysto/nbplus/blob/master/nbvis/objects.py)
+_class_ `classes.D3(name, silent=True)` [[`source`]](https://github.com/callysto/nbplus/blob/master/nbvis/classes.py)
 
 Containerizes D3 structures.
 
 #### Parameters:
-* name (string) – an unique identifier for a class instance
+* _name_ (`string`) – a unique identifier for a class instance
+* _silent_ (`boolean`) – toggles verbose output
 
 #### Methods:
-* `svg(height=None)` – appends code to display an SVG element
-* `canvas(height=None)` – appends code to display a Canvas element
+* `svg(height=None)` – appends code to display an [SVG](https://en.wikipedia.org/wiki/Scalable_Vector_Graphics) element
+* `canvas(height=None)` – appends code to display a [Canvas](https://en.wikipedia.org/wiki/Canvas_element) element
+* `require(*args)` – requires JavaScript modules from [unpkg](https://unpkg.com/) via [asynchronous modules definition](https://en.wikipedia.org/wiki/Asynchronous_module_definition) 
 
 #### Returns: 
 
@@ -52,33 +59,35 @@ Containerizes D3 structures.
 
 #### Return type:	
 
-* `nbvis.objects.D3`
+* `nbvis.classes.D3`
 
 #### Usage:
 
-```python
->>> plot1 = D3("plot").svg(height=300)
-```
-
-`New D3 object called "plot" added to instances ...`
 
 ```python
->>> plot2 = D3("plot").svg(height=500)
+>>> D3.reset()
+>>> foo = D3("foo", silent=False).svg(height=100)
+>>> foo.require("d3-selection-multi", "d3-force-constant")
 ```
 
-`D3 object "plot" is a duplicate ... replacing ...`
+    Reset list of D3 class instances!
+    New D3 object "foo" added to instances ...
+    Will require "d3-selection-multi", "d3-force-constant" ...
+
 
 ---
 
-_class_ `classes.MathBox(name)` [[`source`]](https://github.com/callysto/nbplus/blob/master/nbvis/classes.py)
+_class_ `classes.MathBox(name, silent=True)` [[`source`]](https://github.com/callysto/nbplus/blob/master/nbvis/classes.py)
 
 Containerizes MathBox structures.
 
 #### Parameters:
-* name (string) – an unique identifier for a class instance
+* _name_ (`string`) – a unique identifier for a class instance
+* _silent_ (`boolean`) – toggles verbose output
 
 #### Methods:
-* `canvas(height=None)` – appends code to display a Canvas element
+* `canvas(height=None)` – appends code to display a [Canvas](https://en.wikipedia.org/wiki/Canvas_element) element
+* `require(*args)` – requires JavaScript modules from [unpkg](https://unpkg.com/) via [asynchronous modules definition](https://en.wikipedia.org/wiki/Asynchronous_module_definition) 
 
 #### Returns: 
 
@@ -86,20 +95,58 @@ Containerizes MathBox structures.
 
 #### Return type:	
 
-* `nbvis.objects.MathBox`
+* `nbvis.classes.MathBox`
 
 #### Usage:
 
-```python
->>> plot1 = MathBox("plot").canvas(height=300)
-```
-
-`New MathBox object called "plot" added to instances ...`
 
 ```python
->>> plot2 = MathBox("plot").canvas(height=500)
+>>> bar = MathBox("bar").canvas(height=200)
 ```
-`MathBox object "plot" is a duplicate ... replacing ...`
+
+
+```python
+>>> bar = MathBox("bar", silent=True).canvas(height=300)
+```
+
+    Replaced duplicate MathBox object "bar" ...
+
+
+---
+
+_class_ `classes.Vis(*args, js="", silent=True)` [[`source`]](https://github.com/callysto/nbplus/blob/master/nbvis/classes.py)
+
+#### Parameters:
+* _*args_ (`D3` or `MathBox`) – specifies object class instances to be displayed immediately
+* _js_ (`string`) – prepends custom JavaScript before visualization code
+* _silent_ (`boolean`) – toggles verbose output
+
+#### Methods:
+* None
+
+#### Returns: 
+
+* Visualization object class instance
+
+#### Return type:	
+
+* `nbvis.classes.Vis`
+
+#### Usage:
+
+
+```python
+>>> Vis(foo, bar, silent=False);
+```
+
+    Found D3 instance of "foo" ...
+    Requiring "d3-selection-multi", "d3-force-constant" ...
+    Found MathBox instance of "bar" ...
+
+
+
+    <IPython.core.display.Javascript object>
+
 
 ---
 
@@ -108,19 +155,27 @@ _magic_ `%%d3` [[`source`]](https://github.com/callysto/nbplus/blob/master/nbvis
 Creates a global variable `d3_code` and appends the content of the cell to it for later use in a D3 object class instance. 
 
 #### Flags:
-* to reset **all** code : `--reset`
-* to immediately wrap and run code using D3 : `--now`
+* to reset all code : `--reset`
+* to queue code for later execution : `--queue` or `-q`
 
 #### Usage:
 
-```javascript
-%%d3
-// some JavaScript comment
+
+```python
+>>> import nbvis.magics
+```
+
+
+```python
+%%d3 --reset --queue
+// a JavaScript comment
 var svg = d3.select("svg");
 console.log(svg);
 ```
 
-`Code added to D3 visualization stack!`
+    Initialized d3_code container!
+    Code added to D3 visualization queue ...
+
 
 ---
 
@@ -129,13 +184,14 @@ _magic_ `%%mathbox` [[`source`]](https://github.com/callysto/nbplus/blob/master/
 Creates a global variable `mathbox_code` and appends the content of the cell to it for later use in a MathBox object class instance.
 
 #### Flags:
-* to reset **all** code : `--reset`
-* to immediately wrap and run code using MathBox : `--now`
+* to reset all code : `--reset`
+* to queue code for later execution : `--queue` or `-q`
 
 #### Usage:
 
-```javascript
-%%mathbox
+
+```python
+%%mathbox --queue
 var view = mathbox
   .cartesian({
     range: [[-2, 2], [-1, 1], [-1, 1]],
@@ -151,30 +207,8 @@ var axis = mathbox.select("cartesian > axis")
 console.log(axis);
 ```
 
-`Code added to MathBox visualization stack!`
+    Initialized mathbox_code container!
+    Code added to MathBox visualization queue ...
+
 
 ---
-
-### <a name="nblayout">nblayout</a>
-
-This is a collection of magic commands and Python functions for on-the-fly modifications to the notebook user interface and its layout.
-
-#### Hide All Code Cells
-
-Use this in the first code cell of a notebook:
-
-```python
-import nblayout.uiButtons
-%uiButtons
-```
-
-We expect this code cell to be replaced with two buttons: <input type="submit" id="toggleButton" value="Show Code"> <input id="init" type="submit" value="Initialize">
-
-#### A Column View
-
-First, `import nblayout.nbshape`. Then, begin any code cell with the magic command `%columns`, like this:
-
-```python
-%columns
-<code>
-```
