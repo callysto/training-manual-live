@@ -5,17 +5,15 @@
 
 ## Getting Started
 
-All submodules are available via the command line or, using a code cell in a notebook, using
+Submodules are installed separately.
 
+Use the following command, replacing `<submodule>` with the name of a subdirectory in [nbplus](https://github.com/callysto/nbplus):
 
-```
-!pip install --upgrade --force-reinstall --quiet --user git+git://github.com/callysto/nbplus.git#egg=nbplus
-```
+`pip install --upgrade --force-reinstall --user git+git://github.com/callysto/nbplus.git#egg=<submodule>\&subdirectory=<submodule>`
 
-Once installed, submodules may be imported separately.
+Once installed, import a submodule by referring to itself.
 
 e.g.
-
 
 ```python
 from geogebra.ggb import *
