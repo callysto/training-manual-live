@@ -16,8 +16,9 @@ with the server.
 We also discourage use of plotting libraries outside of matplotlib/plot.ly/D3/mathbox, more about this can be found in the
 [plotting section](plotting.md) of the manual.
 
-We want to maintain consistency across notebooks, if there is an extension you would like to add to the server 
-please post it in the developer slack channel.
+### Requesting an extension added to the hub
+If there is an extension you would like to add to the server 
+please create a notebook demonstrating the basic use cases for the extension and then post the request on the developers slack channel.
 
 ## Magics
 Magics allow you to use many different programming languages in Jupyter cells as well as extend the functionality 
