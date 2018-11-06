@@ -20,5 +20,7 @@ Ask questions throughout your document to **keep the student engaged** and think
 
 Summarize your notebook. **Reiterate** the lesson and important takeaways.   
 
+### Sample Template Notebook
+Refer to [this link](https://github.com/callysto/notebook-templates/blob/master/templates/Notebook_Template_With_TableContents.ipynb) to access a template notebook with magics, table of contents, banners, sample questions, headers and subheaders matching the bare bones template in this section.
 
 ##### Does your notebook contain all these items? If not be sure to add them.
