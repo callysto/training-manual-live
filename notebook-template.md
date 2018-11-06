@@ -20,7 +20,7 @@ Ask questions throughout your document to **keep the student engaged** and think
 
 Summarize your notebook. **Reiterate** the lesson and important takeaways.   
 
-# Below is a link to a notebook that contains all of the sections above in addition to a table of contents, an interactive plot, magics and interactive questions
+## Below is a link to a notebook that contains all of the sections above in addition to a table of contents, an interactive plot, magics and interactive questions
 
 [Sample Template Notebook](https://github.com/callysto/notebook-templates/blob/master/templates/Notebook_Template_With_TableContents.ipynb).
 
