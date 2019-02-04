@@ -22,3 +22,7 @@ If you are getting the error "IOPub data rate exceeded" try to downsize what you
 JavaScript is naturally asynchronous, while Python is not. This will cause problems when passing variables between these languages.
 
 e.g. A variable that has not yet been initialized by JavaScript will be inaccessible to later Python code. Often this manifests during a "Run All" command sent to the kernel.
+
+---
+
+Travis failing unexpectedly due permissions issues when loading external files may be caused by notebooks attempting to write to files. At the moment we discourage notebooks writing to files, if possible find a way around the notebook writing to the file. If it is necessary for your notebook to write to a file please reopen issue [#77](https://github.com/callysto/curriculum-notebooks/issues/77).
