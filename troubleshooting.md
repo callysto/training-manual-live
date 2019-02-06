@@ -26,3 +26,23 @@ e.g. A variable that has not yet been initialized by JavaScript will be inaccess
 ---
 
 Travis failing unexpectedly due permissions issues when loading external files may be caused by notebooks attempting to write to files. At the moment we discourage notebooks writing to files, if possible find a way around the notebook writing to the file. If it is necessary for your notebook to write to a file please reopen issue [#77](https://github.com/callysto/curriculum-notebooks/issues/77).
+
+---
+
+If only one of multiple widgets is working check if they are both pushing data to the same `svg` object. This can be caused by Javascript loading that is not protected by a function. This results in consistent name spacing between the files being over written by the _last_ declaration. Developers to need to wrap animations like this in functions, or they need to be aware that variable declarations _are not safe_ between files once they are loaded into Jupyter.
+
+---
+
+Loading D3 inside the notebook with `<script>` tags require the cells to be run twice in order for any javascript modules to be loaded in time - unless all your javascript is in the same cell (un-imported from an external file and under a `%%javascript` magic). Packages like `d3` need to be included with something like
+
+```js
+requirejs.config({
+    paths: { 
+        'd3': ['//cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3'], 
+    },                                       
+});
+
+require(['d3'], function(d3) { what you want your script to do} )
+```
+
+inside the actual `.js` file _not_ inside the notebook.
