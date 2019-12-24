@@ -4,44 +4,35 @@ The following is a recommended git workflow for developing notebooks. Its main g
 
 ## Levels
 
-There will be 3 basic levels of branches:
+There two types of branches:
 
 1. master
-2. staging
-3. individual notebooks
+2. individual notebooks or stories
 
-Most developers will do work solely within the 3rd level, making sure to occasionally fetch and merge changes from the staging branch.
+Most developers will do work solely within individual branches, making sure to occasionally fetch and merge changes from the master branch.
 
-In a usual software development project, the 3rd level would more commonly be referred to as *feature branches*. In this project, individual notebooks take the place of individual features.
+In a usual software development project, the second level would more commonly be referred to as *feature branches*. In this project, individual notebooks take the place of individual features.
+
+## Working on a Branch
 
 Keeping to a single notebook per *feature branch* gives release coordinators the flexibility to grab notebooks that are ready and leave those that are not when it comes time to prepare for a release.
 
 More than one developer can work on the same notebook branch, and you shouldn't be terribly concerned with checking in polished work at this level, except to the extent that it may disrupt anyone else working with you on the same notebook. A little communication goes a long way here. That said, we expect that it will largely be a single developer working on a particular notebook at a time.
 
-Get comfortable with making regular, small commits to your notebook branch, and push to Github fairly often. This makes merging easier down the line, makes it easier for other developers to review progress, and ensures that your work is backed up.
-
-## Basic Flow
-
-Here’s a diagram of the basic flow of changes from the lower branches up to the master branch:
-
-![github-workflow](images/github-workflow.png)
-
-## Branch: staging
-
-As the diagram illustrates, this setup allows continual commits to work going on in notebooks A-C. It also allows, when preparing for a release, to grab only notebooks A and B, while commits can still actively be made on notebook C (perhaps this notebook ran into some technical issues that extended the amount of work that had to be done on it).
+Get comfortable with making regular, small commits to your notebook branch, and push to GitHub fairly often. This makes merging easier down the line, makes it easier for other developers to review progress, and ensures that your work is backed up.
 
 Occasionally developers working on the individual notebook branches will want to do the following:
 
 ```bash
 git fetch
-git merge staging
+git merge master
 ```
 
-to make sure they’re up to date with the upstream changes and are always ready to be merged into *staging*. This will become more important the closer those individual notebook branches get to being integrated into *staging*.
+to make sure they’re up to date with the upstream changes and are always ready to be merged into *master*. This will become more important the closer those individual notebook branches get to being integrated into *master*.
 
-Notebooks will undergo reviews before being added to staging and also while in staging.
+Notebooks will undergo reviews before being added to master.
 
-## Branch: master
+## Master Branch
 
 This represents "releasable" code. In theory, anyone checking out code from the *master* branch should expect to see the best quality notebook code that we can offer. It won’t necessarily be bug free, but it's free of the bugs we know about (and that are serious enough to block a release).
 
