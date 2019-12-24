@@ -36,7 +36,7 @@ Notebooks will undergo reviews before being added to master.
 
 This represents "releasable" code. In theory, anyone checking out code from the *master* branch should expect to see the best quality notebook code that we can offer. It won’t necessarily be bug free, but it's free of the bugs we know about (and that are serious enough to block a release).
 
-## Commit messages
+## Commit Messages
 
 Capitalize the first letter, no period. Use the imperative "Fix bug" not "Fixes bug" or "Fixed bug". 
 Include the Jira task identifier in the commit message (not in the file title), for example: "CC-33 Add interactivity to the plots". For longer commit message write a short description followed by a blank line and then the longer description. Try to wrap at 72 characters, in Vim this is done with ```:set textwidth=72```. Use the body to explain what and why but not how.
@@ -51,52 +51,46 @@ Individual developers working on notebook branches do not have to worry about ta
 git tag -a v1.0 -m "our first release"
 ```
 
-## Common commands
+## Common Commands
 
 Here are some of the common commands that developers will be using:
 
-### Committing and pushing code:
+### Committing and Pushing Code:
 
 ```bash
 git add some_file
 git add some_other_files*
+git status
 git commit
 git push
 ```
 
-### Create a branch locally and remotely, based off of *staging*:
+### Create a Branch
+
+This will create a branch locally and remotely, based off of *master*:
 
 ```bash
-git checkout staging # if not already there
+git checkout master # if not already there
 git checkout -b branch_name
 git push -u origin branch_name
 ```
 
-### Merge staging into a notebook (feature) branch:
+### Merge Master into a Branch
 
 ```bash
 # Fetch the remote branch and merge it into the local branch
 git pull
 git checkout branch_name # if not already there
-git merge staging
+git merge master
 ```
 
-### Merge a notebook (feature) branch into staging:
-
-```bash
-# Fetch the remote branch and merge it into the local branch
-git pull
-git checkout staging # if not already there
-git merge branch_name
-```
-
-### Compare changes to committed work:
+### Compare Changes to Committed Work:
 
 ```bash
 git diff
 ```
 
-### Compare differences between branches:
+### Compare Differences Between Branches:
 
 ```bash
 git diff staging notebook_a
@@ -112,7 +106,7 @@ git diff origin/branch_name
 git merge origin/branch_name
 ```
 
-### Temporarily stash local changes:
+### Temporarily Stash Local Changes:
 
 ```bash
 git stash
