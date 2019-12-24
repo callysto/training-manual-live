@@ -1,6 +1,6 @@
-# Git workflow
+# Git Workflow
 
-The following is a recommended git workflow for developing notebooks. Its main goals are to encourage regular commits of notebook code and to provide release coordinators with flexibility when preparing for a release.
+The following is a recommended git workflow for developing notebooks. Its main goals are to encourage regular commits of notebook code and to provide release coordinators with flexibility when preparing to merge content into the master branch.
 
 ## Levels
 
