@@ -8,7 +8,7 @@ This training guide is meant to be a resource for Callysto creators and develope
 
 ### Why **Callysto**?
 
-The open-source Jupyter technology is an important aspect of how we are delivering the curriculum materials we are developing. [Callysto](https://en.wikipedia.org/wiki/Callisto_(moon) is a moon of Jupiter and the `y` is our way of aligning ourselves to the larger [Project Jupyter](http://jupyter.org/).
+The open-source Jupyter technology is an important aspect of how we are delivering the curriculum materials we are developing. [Callysto](https://en.wikipedia.org/wiki/Callisto_(moon)) is a moon of Jupiter and the `y` is our way of aligning ourselves to the larger [Project Jupyter](http://jupyter.org/).
 
 ### Developing for the Callysto Project
 
