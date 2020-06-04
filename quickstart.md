@@ -35,7 +35,7 @@ JIRA is an issue tracking product that provides bug tracking, issue tracking, an
 3. in the "Enter your username" field, enter your EMAIL ADDRESS and click "Send"  
 4. check your email for password reset instructions
 
-This assumes that your account was already added to JIRA. If not, please contact your team leader or someone on the [Callysto Slack workspace](https://cancode-collaboration.slack.com).
+This assumes that your account was already added to JIRA. If not, please contact your team leader or someone on the [Callysto Slack workspace](https://cybera.slack.com).
 
 ## Notebook Formatting
 Please see the [Notebook Template](notebook_template.md) and [Notebook Format](NotebookFormat.md) sections for more details. Some examples of Callysto curriculum module notebooks can be found in this [GitHub repository](https://github.com/callysto/curriculum-notebooks).
@@ -52,4 +52,4 @@ If you are new GitHub, here are a couple of guides to get started.
 * More [in-depth guide](https://www.atlassian.com/git/tutorials/what-is-version-control) with good explanations
 
 ## Slack team messaging
-Slack is the messaging system used to communicate with the entire Callysto team. If you have not joined the [Callysto Slack workspace](https://cancode-collaboration.slack.com) yet, contact your team leader to get added.
+Slack is the messaging system used to communicate with the entire Callysto team. If you have not joined the [Callysto Slack workspace](https://cybera.slack.com) yet, contact your team leader to get added.
