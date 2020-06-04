@@ -63,7 +63,7 @@ There isn't a perfect rule for when and when not to do this, but here are some t
 
 2. Does the module name help in understanding what the function does? For example, not only would `import join from os.path` conflict with the basic array `join` function, but it would also mislead readers as to the true purpose of `os.path.join`. The true purpose is to join path components with the path separator, so leaving at least enough of the module path to reflect this makes for clearer code.
 
-3. When in doubt, or if you're using the package infrequently, put the module path with the function. This is the clearest way of avoiding namespace conflicts and allowing poeple to trace where functions are coming from.
+3. When in doubt, or if you're using the package infrequently, put the module path with the function. This is the clearest way of avoiding namespace conflicts and allowing people to trace where functions are coming from.
 
 Two other variations worth noting:
 
@@ -73,7 +73,7 @@ Two other variations worth noting:
 from math import cos as cosine
 ```
 
-This should probably be avoided in most cases, especially with standard Python libraries. The standard names will be easy to search for help on outside of Callysto. The local names you might make up won't. However, there are cases where this may be useful. For example, if you find a rather obscure library with poorly named functions that nevertheless has one function (also poorly named) that's really, really useful, importing it this way would likely improve the readability of your code.
+This should probably be avoided in most cases, especially with standard Python libraries. The standard names will be easy to search for help outside of Callysto. The local names you might make up won't. However, there are cases where this may be useful. For example, if you find a rather obscure library with poorly named functions that nevertheless has one function (also poorly named) that's really, really useful, importing it this way would likely improve the readability of your code.
 
 ### Wildcard Imports
 
@@ -81,7 +81,7 @@ This should probably be avoided in most cases, especially with standard Python l
 from math import *
 ```
 
-As noted in [PEP 8](http://pep8.org), you really shouldn't be doing this, as it's really easy to polute your current namespace and wind up with weird bugs due to unintended function replacements. [PEP 8](http://pep8.org) notes some exceptions, and there's one exception noted below for our purposes.
+As noted in [PEP 8](http://pep8.org), you really shouldn't be doing this, as it's really easy to pollute your current namespace and wind up with weird bugs due to unintended function replacements. [PEP 8](http://pep8.org) notes some exceptions, and there's one exception noted below for our purposes.
 
 ### Local Names of Popular Packages
 
@@ -184,7 +184,7 @@ Please don't start writing any packages on your own. We'll want to coordinate an
 
 ## Folders
 
-If your demo has many file associated to it (images,source code, etc.) it is best to keep them all organized into folder and subfolders, so users know what "package" to copy. Here's a suggested structure. You don't have to use every folder (if you don't store or use any data, for example, you won't need a "data" folder), but following similar names will help people navigate when using other notebooks:
+If your demo has many files associated with it (images,source code, etc.) it is best to keep them all organized into folders and subfolders, so users know what "package" to copy. Here's a suggested structure. You don't have to use every folder (if you don't store or use any data, for example, you won't need a "data" folder), but following similar names will help people navigate when using other notebooks:
 
 ```
 Module_Name/

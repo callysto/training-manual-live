@@ -43,7 +43,7 @@ Please see the [Notebook Template](notebook_template.md) and [Notebook Format](N
 ## Contributing Notebooks
 Once a notebook or other content has been developed, files should be pushed to a [GitHub branch](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-and-deleting-branches-within-your-repository) off of the master repository.
 
-Remember to `Restart and clear output` then `Shutdown` your notebooks before committing your work. This will avoid any odd Git issues that result from running the `bin/git-nb-tools` mentioned above.  
+Remember to `Restart and clear output` then `Shutdown` your notebooks before committing your work. This will avoid any odd Git issues that result from some of the git with Jupyter Notebooks issues mentioned above.  
 
 ### Using GitHub
 If you are new GitHub, here are a couple of guides to get started.

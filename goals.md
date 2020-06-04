@@ -2,7 +2,7 @@
 
 The immediate goal for the Callysto project is to create publicly accessible Jupyter notebooks (and other online resources) that demonstrate the merging of computational thinking into the K-12 curriculum for Alberta, BC and eventually across Canada.
 
-A Jupyter notebook is an computer file that combines text, graphics, and computer code as a platform to deliver online content that is easily accessible through any web browser. A rich source of examples are here: [Jupyter Gallery](https://github.com/jupyter/jupyter/wiki/A-gallery-of-interesting-Jupyter-Notebooks)
+A Jupyter notebook is a computer file that combines text, graphics, and computer code as a platform to deliver online content that is easily accessible through any web browser. A rich source of examples are here: [Jupyter Gallery](https://github.com/jupyter/jupyter/wiki/A-gallery-of-interesting-Jupyter-Notebooks)
 
 Each Jupyter notebook will address an outcome of the K-12 curriculum as specified by documents curated by the project leaders, and will incorporate both text and visuals to address the curriculum outcomes. Ideally they would include interactive features and could access live data from the web for creating up-to-the-minute information sources and analysis.
 
@@ -24,7 +24,7 @@ Stage 1 Deliverables:
 
 **Stage 2** (Summer 2018): Validation
 
-Focus is on distributed content creation, delivery, and improvement process validated by face-to-face meetings and workshops. With 20 or more Callysto Teams in PIMS network in operation through the summer, aim to expand the audience of K-12 teachers  through workshops and partner networks. Callysto Teams launch outside of the PIMS network. PIMS and Cybera is co-investing in the operations. Other partners may begin to contribute to Callysto.
+Focus is on distributed content creation, delivery, and improvement process validated by face-to-face meetings and workshops. With 20 or more Callysto Teams in PIMS network in operation through the summer, aim to expand the audience of K-12 teachers  through workshops and partner networks. Callysto Teams launch outside of the PIMS network. PIMS and Cybera are co-investing in the operations. Other partners may begin to contribute to Callysto.
 
 Stage 2 Deliverables:
 

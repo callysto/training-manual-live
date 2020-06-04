@@ -8,13 +8,13 @@ In JS functions if you have a DOM element (divs, svg, etc.) .innerHTML, if you g
 Iframes are good if you need to contain things, but if you want to access variables in those things then iframes are bad. Instead use magics and html and javascript function calls from the display library. It produces cleaner code too.
 
 ## System time
-Do not make programs that are dependant on system time.
+Do not make programs that are dependent on system time.
 
 ## Infovis
-No pie charts or spaghetti plots. Avoid clutter, and volume comparisons. See the infovis section of the manual for more indepth information.
+No pie charts or spaghetti plots. Avoid clutter, and volume comparisons. See the infovis section of the manual for more in depth information.
 
 ## Use Python for heavy processing
-JS uses the browser aka local, resources. Python uses the remote Callysto Hub resources. Ideally you will do any heavy processing in Python and then pass the results to JS. Try to avoid doing large processing tasks with the user's local resources.
+JS uses the browser aka local resources. Python uses the remote Callysto Hub resources. Ideally you will do any heavy processing in Python and then pass the results to JS. Try to avoid doing large processing tasks with the user's local resources.
 
 ## Do not parse HTML with regex
 [Do not parse HTML with regex](https://stackoverflow.com/questions/1732348/regex-match-open-tags-except-xhtml-self-contained-tags) or other level 2 languages.

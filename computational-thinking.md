@@ -38,13 +38,13 @@ Data science is often about answering questions like:
 
 When developing Jupyter notebooks for the Callysto project, it may be appropriate to consider "teaching students to code" as a secondary goal. The highest priority is to introduce computational thinking and data science processes within activities or lessons that students would be doing anyway.
 
-- not all Jupyter notebooks need to teach the students how to code
-- demonstrate thought process while solving the problem
-- how are you breaking down/formulating the problem? 
-    - why did you choose to do it that way? 
-    - what methods are you using and why? 
-- what data are important to finding your solution? 
-- which visualizations are you using and why? 
+- Not all Jupyter notebooks need to teach the students how to code
+- Demonstrate thought process while solving the problem
+- How are you breaking down/formulating the problem? 
+    - Why did you choose to do it that way? 
+    - What methods are you using and why? 
+- What data are important to finding your solution? 
+- Which visualizations are you using and why? 
 
 The goal of Callysto is to introduce students to the idea of computational thinking and data science within the regular curriculum. We are using Jupyter notebooks because they are designed around the idea of "literate programming", meaning that it is possible to explain not only your code, but the underlying theory, directly in the notebook itself. Jupyter notebooks allow us to break down a problem computationally and explain the solution process.
 
