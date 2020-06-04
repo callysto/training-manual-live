@@ -25,22 +25,8 @@ Note that by default, the new key will overwrite any key stored in *.ssh/id_rsa*
 
 There are other options for interacting with GitHub as well. Please see [this page](https://developer.github.com/v3/guides/managing-deploy-keys/) for more information.
 
-### Setting up notebook-specific git tools
-Any GitHub project, including this one, can be initialized with a filter to remove output blocks from checkins and give more readable git diffs by running the following from a terminal:
-```
-bin/git-nb-tools
-```
-in the root of the project (adjusting the path to the setup script if running from outside of this project).
-
-To use the notebook specific git tools, you will also need to make sure there is a .gitattributes file in your project root with at least the following lines:
-
-```
-*.ipynb filter=nbstripout  
-*.ipynb diff=jupyternotebook  
-*.ipynb merge=jupyternotebook
-```
-
-Note that this file should have been pulled automatically from the repository.
+## Version Control with Jupyter Notebooks
+Jupyter notebooks are written in a JSON format that, when altered using the notebook interface, result in a very difficult to read git diff output. This is because when you change the contents of a given cell, it will have a downstream effect on the notebook's source code, metadata, and output files. At first you may know where to look based on your memory, but when trying to untangle a old notebook's commit history based on git diff there will be difficulties. For this reason it is recommended that you use a tool that makes code comparisons between versions more readable. Please see [this](https://nextjournal.com/schmudde/how-to-version-control-jupyter) article for more details.
 
 ## JIRA - what to work on and coordinating with others
 JIRA is an issue tracking product that provides bug tracking, issue tracking, and project management functions. If your team is using JIRA, follow these steps to access it for the first time:  
