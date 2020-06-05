@@ -29,7 +29,7 @@ Travis failing unexpectedly due permissions issues when loading external files m
 
 ---
 
-If only one of multiple widgets is working check if they are both pushing data to the same `svg` object. This can be caused by Javascript loading that is not protected by a function. This results in consistent name spacing between the files being over written by the _last_ declaration. Developers to need to wrap animations like this in functions, or they need to be aware that variable declarations _are not safe_ between files once they are loaded into Jupyter.
+If only one of multiple widgets is working check if they are both pushing data to the same `svg` object. This can be caused by Javascript loading that is not protected by a function. This results in consistent name spacing between the files being overwritten by the _last_ declaration. Developers need to wrap animations like this in functions, or they need to be aware that variable declarations _are not safe_ between files once they are loaded into Jupyter.
 
 ---
 

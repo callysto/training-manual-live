@@ -30,18 +30,18 @@ Information visualization is a key part of the notebooks. We want to bring visua
 + Computational
     + Primarily the notebooks use remote resources from the hub to run their code but sometimes use the user's local resources. Try to run most of the heavy processing in Python and then pass it to the visualization library of your choice. 
 + Perceptual/Cognitive
-    + Be sure to uphold accessibility standards! This is especially important in the context of this project, we do not want any children to be unecessarily excluded or disadvantaged.
+    + Be sure to uphold accessibility standards! This is especially important in the context of this project, we do not want any children to be unnecessarily excluded or disadvantaged.
     + Generally avoid putting too much clutter on your graph, the perceptual system has limited capacity. If any aspects of your visualization move actively, you should expect those to distract from the rest of your visualization.
 + Display
     + If you are creating visualizations with small details the display limits will be a factor. Many schools use old low resolution screens, don't assume it will look the same way it does on your expensive work computer. Avoid fine grained details.
-    + Not all displays are callibrated corectly, if you use many colours which have to be discriminated from each other, be sure to use [color brewer](http://colorbrewer2.org) to select your colour scheme.
+    + Not all displays are calibrated correctly, if you use many colours which have to be discriminated from each other, be sure to use [color brewer](http://colorbrewer2.org) to select your colour scheme.
 
 ##### Visual Encoding Principles
 ![Analyzing visual Encoding Via Marks and Channels](images/AnalyzingVisualEncoding.jpeg)
 
 ![Channels, Matching Expressiveness](images/ChannelsMatchingExpressiveness.jpeg)
 
-Please avoid trying to encode information as 3D volume eor curvature, these are difficult for people to process.
+Please avoid trying to encode information as 3D volume or curvature, these are difficult for people to process.
 
 ##### Types of Data
 1. Quantitative
@@ -86,4 +86,4 @@ Use [Color brewer](http://colorbrewer2.org) to select your color schemes.
 
 [A gallery](http://conceptviz.github.io/#/e30=) of concept visualizations.
 
-p.s. if you would like to learn more about information visualization reach out to india (india@pims.math.ca), she works in an infovis lab. Special thanks to Madison Elliott for providing many of these infovis outlines.
+P.S. If you would like to learn more about information visualization, reach out to India (india@pims.math.ca), she works in an infovis lab. Special thanks to Madison Elliott for providing many of these infovis outlines.

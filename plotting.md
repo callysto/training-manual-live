@@ -21,7 +21,7 @@ Plot.ly is good for interactivity. You can easily convert your matplotlib plots 
 
 Plot.ly in Jupyter notebooks [tutorial](https://plot.ly/python/ipython-notebook-tutorial/)
 
-[Plot data from a csv](https://plot.ly/python/plot-data-from-csv/()
+[Plot data from a csv](https://plotly.com/python/plot-data-from-csv/)
 
 Sample plot.ly graph, from a matplotlib plot:
 
@@ -84,7 +84,7 @@ You cannot easily convert from matplotlib/plot.ly to D3 or Mathbox. D3 and Mathb
 Usually the workflow would be to imagine a visualization you want, and then directly begin to create it in D3 or Mathbox.
 
 ### D3
-D3 is similar to but far better than, matplotlib or plot.ly. It has a large learning curve and you will mostly be on your own for debugging and troubleshooting.
+D3 is similar to but far better than matplotlib or plot.ly. It has a large learning curve and you will mostly be on your own for debugging and troubleshooting.
 If you really need D3 help you can contact Eric, eric.easthope@me.com.
 
 Frankly the docs on D3 are not a great way to learn it. I suggest building off of [examples](https://bl.ocks.org/mbostock).
@@ -95,4 +95,4 @@ If you are especially keen you can try combining D3 with three.js or related.
 
 ### Mathbox
 Mathbox can do almost anything you want and pushes the limits of computer graphics. However... it is not actively maintained, the docs are terrible, and the learning curve is very steep.
-Take a look at some of the pages of [acko.net](https://acko.net/blog/mathbox2/), feel free to explore to some of the other pages to see more examples.
+Take a look at some of the pages of [acko.net](https://acko.net/blog/mathbox2/), feel free to explore some of the other pages to see more examples.

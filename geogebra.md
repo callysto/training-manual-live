@@ -19,4 +19,4 @@ We're working on a Python library to try to make this process as easy and seamle
 powerful tools. 
 
 To get started using Geogebra in Jupyter, 
-Clone the [Geogebra Guide notebook](guides/GeogebraGuide.ipynb) or [view it with nbviewer](https://nbviewer.jupyter.org/github/callysto/training-manual-live/guides/blob/master/GeogebraGuide.ipynb).
+Clone the [Geogebra Guide notebook](https://github.com/callysto/shorts/blob/master/Geogebra.ipynb) or [view it with nbviewer](https://nbviewer.jupyter.org/github/callysto/shorts/blob/master/Geogebra.ipynb).
