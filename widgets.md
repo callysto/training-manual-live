@@ -1,6 +1,6 @@
 # Using Widgets
 
-Widgets are interactive objects on the notebook: buttons, check boxes, sliders and drop-down menus that allow the user to control actions in the notebook in a simple "point-and-click" methods.
+Widgets are interactive objects on the notebook: buttons, check boxes, sliders and drop-down menus that allow the user to control actions in the notebook in a simple "point-and-click" method.
 
 Widgets are a quick way to get interactivity in your Jupyter displays. You can read more about them here:
 [Widget notes](http://ipywidgets.readthedocs.io/en/latest/examples/Widget%20Basics.html)
@@ -34,7 +34,7 @@ def f(x):
 Notice the argument of the function is called **x**. We will use this same **x** when calling up the interact command.
 
 
-**Next:** We create the widgets by calling the **interact** function, using an argument type for **x**. The choice of type of data **x** will automatically select wheter we get a slider, check box, text entry boxes, etc.
+**Next:** We create the widgets by calling the **interact** function, using an argument type for **x**. The choice of type of data **x** will automatically select whether we get a slider, check box, text entry boxes, etc.
 
 Here are a few examples. **Note:** It is useful to end the function call with a semicolon, to suppress useless output.
 

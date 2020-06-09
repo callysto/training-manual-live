@@ -11,7 +11,7 @@ from pylab import *
 from IPython.display import Audio
 ```
 
-We now set up five seconds of sound, sampled at 8000 times per second. We generate two pure tones together at 440 and 442 Hertz. This corresponds to a musical note at A above middle C. The slight difference in frequecies will cause a beating, or fluctuation of the sound at 2 beats per second.
+We now set up five seconds of sound, sampled at 8000 times per second. We generate two pure tones together at 440 and 442 Hertz. This corresponds to a musical note at A above middle C. The slight difference in frequencies will cause a beating, or fluctuation of the sound at 2 beats per second.
 
 
 ```python
@@ -36,7 +36,7 @@ Your browser does not support the audio element.
 
 
 
-We can analyse this signal with the Fourier transform. Plotting, we see the energy is concentrated need 440 Hz (and there is a mirror image in the frequency near 8000-440 Hz).
+We can analyse this signal with the Fourier transform. Plotting, we see the energy is concentrated at 440 Hz (and there is a mirror image in the frequency near 8000-440 Hz).
 
 
 ```python
@@ -75,6 +75,3 @@ Humans with exceptional hearing can hear frequencies up to 20,000 Hz (20 kHz). T
 But, since computer speakers are often of lower quality, we typically sample at lower rates like 8000, 10000, or 22050 samples per second. That give sound that is "good enough" and saves on computer memory.
 
 
-```python
-
-```

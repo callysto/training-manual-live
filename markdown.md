@@ -6,7 +6,7 @@ Markdown is a rich language: a quick introduction to it is available here: https
 
 Some quick points:
 
-## Editting and typesetting
+## Editing and typesetting
 Within the Jupyter notebook, you simply type your text and Markdown symbols into a cell, and hit “shift-return” to typeset the cell into pretty text (and math). Click on the cell again to undo the typesetting, so you can edit and fix your text. Make sure, of course, that you have marked the cell as “Markdown” and not “Code.”
 
 ## Headers

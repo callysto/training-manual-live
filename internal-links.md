@@ -25,7 +25,7 @@ This is where we track what stories we are working on for the development sprint
 ## Slack
 This is where we quickly communicate and collaborate. Please get added to this if you are not already.
 
-https://cancode-collaboration.slack.com
+<https://callysto.slack.com>
 
 ## Intro to Syzygy
 This is a related Jupyter project from PIMS, Cybera and Compute Canada.

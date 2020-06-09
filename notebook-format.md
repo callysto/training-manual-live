@@ -25,7 +25,7 @@ Where the details behind these sections are explained below.
 However, the basic format of the notebooks can be described as "Describe what you're going to teach in this notebook and why, provide further details of what you said you would teach, demonstrate what you have taught, and state those facts again."
 
 ### A Note About Visualizations
-All of our demos should include eye-catching visualizations (static or interactive). For inspiration and instruction please visit our [Special Topics](special.md) section.
+All of our demos should include eye-catching visualizations (static or interactive). For inspiration and instruction please visit our [Information Visualization](infovis.md) section.
 
 ## Introductions
 All notebooks for the Callysto project will require an introduction. In this section you will outline and motivate the content of your notebook so there is no ambiguity in regards to the content of your notebook. This is arguably the most important section of any notebook. This is the first section any student/teacher is going to read, and if your introduction is vague/bad, then the content you create is never going to get used. Below are some examples of both a bad and a good introduction
@@ -43,7 +43,7 @@ This introduction is far superior to the last one. Not only have we introduced _
 
 ### A Brief Note on "Eye Catching"
 
-From conversations with K-12 teachers is that it may be useful to have an "eye catching" graphic in the first few lines in order to draw in your K-12 crowd. This is pretty flexible and can range from either a widget that you're going to go over how to build, to relevant YouTube videos or gifs. For example
+From conversations with K-12 teachers it may be useful to have an "eye catching" graphic in the first few lines in order to draw in your K-12 crowd. This is pretty flexible and can range from either a widget that you're going to go over how to build, to relevant YouTube videos or gifs. For example
 
 > ## Introduction
 >The rise of cryogenic technologies have been largely popularized by the work of one Philip J. Fry:
@@ -59,13 +59,13 @@ may suffice as the first two sentences of an introduction. In this case, the "Ey
 
 ## Background and Examples
 
-In principle a lot of the back ground can be included in the introduction, however sometimes it may be easier to write as its own section inter-weaved with various examples. With the flexibility that a Jupyter notebook provides it becomes very easy to "teach by example". Not only that, but we can make those examples interactive. The game you have to play in these sections is to not only explain the subject matter, but to also come up with some level of interactivity or visualization that will supplement the lesson. Your goal as a Callysto creator will be to demonstrate the subject matter you wish to teach by using interactive examples. See the examples below
+In principle a lot of the background can be included in the introduction, however sometimes it may be easier to write as its own section inter-weaved with various examples. With the flexibility that a Jupyter notebook provides it becomes very easy to "teach by example". Not only that, but we can make those examples interactive. The game you have to play in these sections is to not only explain the subject matter, but to also come up with some level of interactivity or visualization that will supplement the lesson. Your goal as a Callysto creator will be to demonstrate the subject matter you wish to teach by using interactive examples. See the examples below
 
 ##### Bad Example
 If this was a crusty old textbook on introductory statistics, we might have an explanation and example something like this
 
 
-> A coin toss has a fifty percent probability to return either heads or tails. However, this does not necessarily  translate into returning an equal number of heads and tails during experiment! For example, see th results of the Table below where in we flipped a coin some dozens of times
+> A coin toss has a fifty percent probability to return either heads or tails. However, this does not necessarily translate into returning an equal number of heads and tails during the experiment! For example, see the results of the Table below where in we flipped a coin some dozens of times
 >
 > | Number of Trials   |      Head Count      |  Tail Count |
 > |----------|:-------------:|------:|
@@ -90,7 +90,7 @@ Now to be fair that started strong. It talked about the intuitive probability be
 
 Notice how now we have something interactive such that the student is free to run as many trials as they like in order to help understand the process. Not to mention that as we've run away from the table format, we were also free to introduce the idea of biased coins.
 
-Essentially the name of the game is interactivity and demonstrations. If there's a way for you to explain/visualize your content in an interactive way, it is strongly encouraged that you do that. Of course the code for the interactivity may get complicated. That's okay. Feel free to to take advantage of the ability to hide blocks of code for the interactive widgets if that code went "out of scope" of what you're hoping to teach. However, it is important that you comment those codes well in case a teacher/student is curious about the underlying structure of those widgets.
+Essentially the name of the game is interactivity and demonstrations. If there's a way for you to explain/visualize your content in an interactive way, it is strongly encouraged that you do that. Of course the code for the interactivity may get complicated. That's okay. Feel free to take advantage of the ability to hide blocks of code for the interactive widgets if that code went "out of scope" of what you're hoping to teach. However, it is important that you comment those codes well in case a teacher/student is curious about the underlying structure of those widgets.
 
 
 Regardless, within the Jupyter notebooks you create you need to explain the background/provide examples and interactivity that will help you teach the subject matter to the students. And if that wasn't challenging enough, you have to find a way to communicate that in a way that is understandable to your K-12 audience.

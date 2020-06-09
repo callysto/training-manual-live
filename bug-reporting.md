@@ -13,7 +13,7 @@
 ## Where can they report a bug?
 
 * Internal bug tracking - JIRA.
-* External bug tracking - Bugs can be reported via this [form](https://docs.google.com/forms/d/e/1FAIpQLSeVe7bZNY2YzNOUZI6YPUG778RPFQ8BniLj2lGAqGK8Y1JmDQ/viewform).
+* External bug tracking - Bugs can be reported by creating an [issue](https://help.github.com/en/github/managing-your-work-on-github/creating-an-issue) on the Github [repo](https://github.com/callysto/curriculum-notebooks/issues). 
 
 ## How to report a bug?
 
@@ -23,4 +23,4 @@
     * Actual result
 * When writing down the steps to reproduce a bug,
     *  It would be helpful to note down the environment details like web browser or other system information if thats relevant. Also, note down general details like name of the notebook, section of the notebook where you find the error, etc.
-    * Add screenshots if possible and only if it adds to the explanation. Please note, for external bug reporting, screenshot uploads via the [form](https://docs.google.com/forms/d/e/1FAIpQLSeVe7bZNY2YzNOUZI6YPUG778RPFQ8BniLj2lGAqGK8Y1JmDQ/viewform) are not available as they require Google sign-in.
+    * Add screenshots if possible and only if it adds to the explanation. Please note, for external bug reporting, screenshot uploads are not available natively in Github, therefore you may want to consider hosting your image and linking to it via [imgur](https://imgur.com/) or your host of choice.  

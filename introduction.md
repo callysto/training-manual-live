@@ -8,7 +8,7 @@ This training guide is meant to be a resource for Callysto creators and develope
 
 ### Why **Callysto**?
 
-The open-source Jupyter technology is an important aspect of how we are delivering the curriculum materials we are developing. [Callysto](https://en.wikipedia.org/wiki/Callisto_(moon)) is a moon of Jupiter and the `y` is our way of aligning ourselves to the larger [Project Jupyter](http://jupyter.org/).
+The open-source Jupyter technology is an important aspect of how we are delivering the curriculum materials we are developing. [Callysto](<https://en.wikipedia.org/wiki/Callisto_(moon)>) is a moon of Jupiter and the `y` is our way of aligning ourselves to the larger [Project Jupyter](http://jupyter.org/).
 
 ### Developing for the Callysto Project
 
@@ -16,7 +16,7 @@ Callysto developer will commit to and create selected curriculum content modules
 
 ## Things to Keep in Mind While Developing Content
 
-When creating a notebook, keep your target audience in mind. For example, if your notebook is meant for Grade 5 students, the reading level and instructions should be no higher than Grade 5 (preferably a grade or two lower). You can check reading level of text using some online tools (such as [this one](https://www.perrymarshall.com/grade/)), through tools built into [Word](https://support.office.com/en-us/article/get-your-document-s-readability-and-level-statistics-85b4969e-e80a-4777-8dd3-f7fc3c8b3fd2) and [Docs](https://support.google.com/docs/answer/39003?hl=en-GB), or with a [Python library](https://github.com/shivam5992/textstat).
+When creating a notebook, keep your target audience in mind. For example, if your notebook is meant for Grade 5 students, the reading level and instructions should be no higher than Grade 5 (preferably a grade or two lower). You can check the reading level of text using some online tools (such as [this one](https://www.perrymarshall.com/grade/)), through tools built into [Word](https://support.office.com/en-us/article/get-your-document-s-readability-and-level-statistics-85b4969e-e80a-4777-8dd3-f7fc3c8b3fd2) and [Docs](https://support.google.com/docs/answer/39003?hl=en-GB), or with a [Python library](https://github.com/shivam5992/textstat).
 
 
 As a Callysto creator and developer you may be far removed from the K-12 experience. Continuously ask yourself "Would someone who knows absolutely nothing about anything contained within this topic understand the explanation I've given?". It is imperative that you are clear and explicit in your explanations - but also in a way that your audience can understand.
@@ -38,7 +38,7 @@ def GCD(a, b):
 
 For someone with coding experience, that's fairly easy to understand. Run through a loop until `a mod b` is zero and you've the greatest common denominator.  And it works every time! There's even error handling! Over all that's a pretty versatile function, and a neat little piece of code.
 
-But now imagine you have never seen Python before. You don't know what `def` means, you have no clue what `while` does. What is `isinstance`? What's a `float`? `if`? Why is it spaced all funny? A percent sign? Even if this function was heavily commented, it might still be somewhat unapproachable for beginners. How would you you go about constructing a simple Python example that would find greatest common divisors?
+But now imagine you have never seen Python before. You don't know what `def` means, you have no clue what `while` does. What is `isinstance`? What's a `float`? `if`? Why is it spaced all funny? A percent sign? Even if this function was heavily commented, it might still be somewhat unapproachable for beginners. How would you go about constructing a simple Python example that would find greatest common divisors?
 
 There might not be a great way to implement this particular example for a beginner audience. A better example might be to also introduce the idea of equivalent fractions, and ask them to find if two fractions are equivalent:
 

@@ -11,7 +11,7 @@ When a notebook has been developed and is ready to be committed to staging it wi
 
 ### Notebook Review Process
 
-_Huzzah i've completed my notebook!_ After the initial euphoria has worn off, developers should follow these steps to complete the content and code review processes.
+_Huzzah I've completed my notebook!_ After the initial euphoria has worn off, developers should follow these steps to complete the content and code review processes.
 
 #### Content Review Steps
 1. Demo your notebook at a sprint demo meeting.
@@ -19,12 +19,12 @@ _Huzzah i've completed my notebook!_ After the initial euphoria has worn off, de
 1. Once you've demoed and incorporated initial feedback, in Jira, change the **Status** of your Story from `In-Progress` to `Resolved`.
 1. Then, click `Create Sub-Task` in your Jira Story and enter "content review" in the **Summary** field.
     * The sprint coordinator will then assign a subject matter expert to review the content of your notebook.
-1. The content reviewer will review the notebook for content and submit their comments back to developer. Once they have finished their review the **Status** of the Jira Sub-Task is changed from `In-Progress` to `Resolved`.
+1. The content reviewer will review the notebook for content and submit their comments back to the developer. Once they have finished their review the **Status** of the Jira Sub-Task is changed from `In-Progress` to `Resolved`.
     * Review comments should be added directly to the Jira Sub-Task under the **Comments** section and/or the **Attachments** section if they are written in a separate file (e.g. markdown).
 1. Once you have incorporated the content review feedback into your notebook, move the **Status** of the Jira Sub-Task from `Resolved` to `Closed (reviewed)`.
 
 #### Code Review Steps
-6. Once, the content review is completed, then you should create a pull request to merge your notebook branch to the staging branch in [GitHub](https://github.com/callysto/curriculum-notebooks).
+6. Once the content review is completed, then you should create a pull request to merge your notebook branch to the staging branch in [GitHub](https://github.com/callysto/curriculum-notebooks).
     * [Git workflow overview](https://training.callysto.ca/coding/github-workflow).
 1. A code review will then be done by one of the code reviewers. Once you have satisfied any requested code changes, your branch will be merged. When this occurs change your Jira Story **Status** from `Resolved` to `Closed (reviewed)`.
 
@@ -49,7 +49,7 @@ To start, it is good practice to begin with an "Overall Summary" of your finding
 1. Does the notebook contain some sort of interactivity?
    - Widgets, animations, filling in segments of code etc.
 1. Does the notebook demonstrate computational thinking in a way that is independent of understanding the underlying code?
-   - See [computational thinking](computational_thinking.md)
+   - See [computational thinking](computational-thinking.md)
    - Not applicable for notebooks where teaching the student to code is the lesson.
 1. Does the notebook use an open data source to assist with the development of the notebook narrative and examples?
    - If you feel there is an open data source that could assist with the lesson, please let the developer know so that they may incorporate it

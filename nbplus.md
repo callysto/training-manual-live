@@ -26,7 +26,7 @@ To contribute, see the [repository](https://github.com/callysto/nbplus).
 
 ### <a name="geogebra">GeoGebra</a>
 
-GeoGebra is an interactive mathematics application for visualization and interaction with geometry, algebra, statistics and calculus. We have developed a Jupyter magic so that GeoGebra may used within notebooks.
+GeoGebra is an interactive mathematics application for visualization and interaction with geometry, algebra, statistics and calculus. We have developed a Jupyter magic so that GeoGebra may be used within notebooks.
 
 ---
 
@@ -38,7 +38,7 @@ A sample guide outlining the creation of a slider bar using `nbvis` is available
 
 ---
 
-_class_ `classes.D3(name, silent=True)` [[`source`]](https://github.com/callysto/nbplus/blob/master/nbvis/classes.py)
+_class_ `classes.D3(name, silent=True)` [[`source`]](https://github.com/callysto/nbplus/blob/master/nbvis/nbvis/widgets.py)
 
 Containerizes D3 structures.
 

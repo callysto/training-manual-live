@@ -6,8 +6,8 @@ The following is a recommended git workflow for developing notebooks. Its main g
 
 There two types of branches:
 
-1. master
-2. individual notebooks or stories
+1. Master
+2. Individual notebooks or stories
 
 Most developers will do work solely within individual branches, making sure to occasionally fetch and merge changes from the master branch.
 
