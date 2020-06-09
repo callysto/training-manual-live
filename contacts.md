@@ -1,6 +1,6 @@
 # Contacts
 
-[Slack](http://cancode-collaboration.slack.com)
+[Slack](http://callysto.slack.com)
 
 ## Developer Contacts
 

@@ -36,7 +36,7 @@ Follow these steps to access JIRA for the first time:
 3. In the "Enter your username" field, enter your EMAIL ADDRESS and click "Send"  
 4. Check your email for password reset instructions
 
-NB: this assumes that your account was already added to JIRA. If not, please contact your PIMS leader or someone on the [Callysto Slack workspace](https://cybera.slack.com).
+NB: this assumes that your account was already added to JIRA. If not, please contact your PIMS leader or someone on the [Callysto Slack workspace](https://callysto.slack.com).
 
 ## Sprint Process
 
