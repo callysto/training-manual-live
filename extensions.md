@@ -14,7 +14,7 @@ However there are exceptions, if you are unsure ask the developer channel in sla
 We discourage the use of the extensions in the nbextensions package as many of them are unstable and may cause issues 
 with the server.
 We also discourage use of plotting libraries outside of matplotlib/plot.ly/D3/mathbox, more about this can be found in the
-[plotting section](plotting.md) of the manual.
+[plotting section](plotting.md) of the manual. For tutorials and example implementations of standardized curriculum notebook tools, see <https://github.com/callysto/shorts/>. 
 
 ### Requesting an extension added to the hub
 If there is an extension you would like to add to the server 
