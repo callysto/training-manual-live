@@ -54,3 +54,10 @@ The agile process employed by Callysto involves meetings:
     * If they are encountering any road-blocks or impediments to the completion of their story
 
 NB: Please ensure that your university (PIMS) leader invites you to these sprint meetings.
+
+## Development Workflow 
+
+In most software development you will see some sort of development cycle. Our notebooks are no different, however it is important that we develop notebooks with the needs of educators and the K-12 curriculum in mind. For this reason, it is important to include their ideas and feedback at the early stages of content creation to ensure that our notebooks are relevant and useful. 
+
+![Our development workflow](https://i.imgur.com/OrcbCzO.jpg)
+
