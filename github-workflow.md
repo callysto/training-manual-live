@@ -1,6 +1,6 @@
 # Git Workflow
 
-The following is a recommended git workflow for developing notebooks. Its main goals are to encourage regular commits of notebook code and to provide release coordinators with flexibility when preparing to merge content into the master branch.
+The following is a recommended git workflow for developing notebooks. Its main goals are to encourage regular commits of notebook code and to provide release coordinators with flexibility when preparing to merge content into the master branch. Make sure you obtain contributing permissions for the repository before attempting to make a branch.
 
 ## Levels
 
@@ -19,7 +19,7 @@ Keeping to a single notebook per *feature branch* gives release coordinators the
 
 More than one developer can work on the same notebook branch, and you shouldn't be terribly concerned with checking in polished work at this level, except to the extent that it may disrupt anyone else working with you on the same notebook. A little communication goes a long way here. That said, we expect that it will largely be a single developer working on a particular notebook at a time.
 
-Get comfortable with making regular, small commits to your notebook branch, and push to GitHub fairly often. This makes merging easier down the line, makes it easier for other developers to review progress, and ensures that your work is backed up.
+Get comfortable with making regular, small commits to your notebook branch, and push to GitHub fairly often. This makes merging easier down the line, makes it easier for other developers to review progress, and ensures that your work is backed up. Make sure you are only tracking files that you are editing (avoid git add * where possible). Due to the metadata files in Jupyter Notebooks, often times just running a notebook will show up as changes in the code. In this case, use git reset HEAD or git reset --hard to match your branch to what's on the Github repo.
 
 Occasionally developers working on the individual notebook branches will want to do the following:
 
@@ -30,7 +30,7 @@ git merge master
 
 to make sure they’re up to date with the upstream changes and are always ready to be merged into *master*. This will become more important the closer those individual notebook branches get to being integrated into *master*.
 
-Notebooks will undergo reviews before being added to master.
+Notebooks will undergo reviews before being added to master. To do this, make a pull request in the repository and add at least one other person as a reviewer. In this process, the Travis continuous integration client will provide automatic code checks. To learn more about using Travis with Pythonm see [here.](https://towardsdatascience.com/extensive-python-testing-on-travis-ci-4c24db9bf961)
 
 ## Master Branch
 
