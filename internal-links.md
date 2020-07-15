@@ -12,6 +12,11 @@ This is where we post our public demos, notebooks, etc.
 
 [https://github.com/callysto](https://github.com/callysto)
 
+## The Callysto Shorts Jupyter Book.
+Contains examples of commonly used code in our books for interactivity and visualizations.
+
+[Callysto Shorts Jupyter Book](https://callysto.github.io/shorts-book/intro.html) 
+
 ### The Private Callysto GitHub Repository
 This is where we post our private demos, for discussion and improvement before release.
 

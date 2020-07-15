@@ -2,6 +2,7 @@
 
 In order to maintain a consistent format across notebooks, subjects, and authors there are some formatting and structure requirements in place, outlined below.
 
+Note that all notebooks must follow CamelCase for directory names and kebab-case for filenames.
 
 Your notebook is likely intended to _teach_ something new. As this is the case, your notebook should contain the following points and follow this basic structure. You're free to add subsections relevant to these primary sections where applicable, however it is important that every notebook contains these five elements.
 

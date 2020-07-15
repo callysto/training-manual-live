@@ -37,6 +37,9 @@ These resources were suggested to us by a group of K-12 teacher advisors. They c
 [More interesting Jupyter notebooks](http://nb.bianp.net/sort/views/)
 
 ## Coding
+
+[Callysto Shorts Jupyter Book](https://callysto.github.io/shorts-book/intro.html) of commonly used code in our notebooks.
+
 [Textbooks and conversion](https://stackoverflow.com/questions/23292242/converting-to-not-from-ipython-notebook-format)
 
 [Useful blog on Jupyter notebooks](https://www.dataquest.io/blog/jupyter-notebook-tips-tricks-shortcuts/)

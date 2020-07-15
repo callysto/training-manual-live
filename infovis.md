@@ -86,4 +86,6 @@ Use [Color brewer](http://colorbrewer2.org) to select your color schemes.
 
 [A gallery](http://conceptviz.github.io/#/e30=) of concept visualizations.
 
+[Callysto Shorts Jupyter Book](https://callysto.github.io/shorts-book/intro.html) of commonly used code in our notebooks.
+
 P.S. If you would like to learn more about information visualization, reach out to India (india@pims.math.ca), she works in an infovis lab. Special thanks to Madison Elliott for providing many of these infovis outlines.
