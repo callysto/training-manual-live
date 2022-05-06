@@ -46,3 +46,7 @@ require(['d3'], function(d3) { what you want your script to do} )
 ```
 
 inside the actual `.js` file _not_ inside the notebook.
+
+---
+
+nbgitpuller automatic merge commits. **Situation**: You use a nbgitpuller link to clone a Github repository to hub.callysto.ca, make some changes to the notebook(s) in the hub, and then try to clone the repo again using the same nbgitpuller link. **Behaviour**: Please note that nbgitpuller will try to create an automatic commit to persist the changes that you made to the notebook(s). **Mitigation**: On a case by case basis, you might wish to drop the automatic commit before you set up a Pull Request. This behavior is explained in detail in the [nbgitpuller documentation](https://jupyterhub.github.io/nbgitpuller/topic/automatic-merging.html).  
