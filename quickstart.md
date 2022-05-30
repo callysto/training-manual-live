@@ -25,6 +25,46 @@ Note that by default, the new key will overwrite any key stored in *.ssh/id_rsa*
 
 There are other options for interacting with GitHub as well. Please see [this page](https://developer.github.com/v3/guides/managing-deploy-keys/) for more information.
 
+### Working Locally/Offline
+It may be necessary or convenient to be able to run examples or develop on a local copy on your computer/laptop. This might be because you expect to be working without internet access, 
+or working with complex git branches. Jupyter is easy to run after pip installing it, but it is best to match the entire environment (libraries, os, python version, etc.) 
+as the Callysto Hub. The docker images used are hosted on the [callysto docker hub](https://hub.docker.com/u/callysto) and uses the [callysto/pims-r](https://hub.docker.com/r/callysto/pims-r/tags) 
+image. This does require [installing docker](https://docs.docker.com/get-docker/) first. After installing docker (for docker-desktop make sure it is running) simply running:
+```
+docker run -it callysto/pims-r:latest
+```
+will start jupyter with all the correct libraries and software installed.
+
+To also have access to the various callysto notebooks, you also need to clone the github repo. After cloning the repository to a directory, we modify 
+the above command to allow the docker container to use and modify the notebooks and other files. On a *nix system this may look like the following:
+```
+mkdir Callysto
+cd Callysto
+git clone https://github.com/callysto/curriculum-notebooks.git
+docker run -it -p 8888:8888 -v "${PWD}":/home/jupyter --name callysto -d --rm callysto/pims-r:latest
+docker logs callysto
+```
+The options we've added to the `docker run` command do the following:
+ - `-p 8888:8888` gives access to the default port (8888),
+ - `-v "${PWD}":/home/jupyter` shares the file contents with the server,
+ - `--name callysto` names the container "callysto",
+ - `-d "detaches"` the container and lets us use the terminal,
+ - `--rm` removes the container after quitting (lets us re-use the callysto name in other runs).
+
+The port mapping may need to be adjusted if other jupyter servers are running on 
+your machine. The last 3 options itemized above can safely be omitted.
+
+Following successful launch of the container, navigating to `localhost:8888` or using the
+address+token from the logs will start Jupyter in the web browser as expected. Changes
+to the files will be synced between the container and the directory where the repository was 
+cloned. 
+
+If using this to develop and work with git branches, 
+care should be taken that resources used do not exceed 
+those available on the Callysto Hub. Disk usage can be checked using, e.g., `du -sh curriculum-notebooks` and cannot exceed 1GB for 
+usage on the Hub. RAM usage can be limited by adding a `-m 4G` to the docker 
+run command. 
+
 ## Version Control with Jupyter Notebooks
 Jupyter notebooks are written in a JSON format that, when altered using the notebook interface, result in a very difficult to read git diff output. This is because when you change the contents of a given cell, it will have a downstream effect on the notebook's source code, metadata, and output files. At first you may know where to look based on your memory, but when trying to untangle a old notebook's commit history based on git diff there will be difficulties. For this reason it is recommended that you use a tool that makes code comparisons between versions more readable. Please see [this](https://nextjournal.com/schmudde/how-to-version-control-jupyter) article for more details.
 
