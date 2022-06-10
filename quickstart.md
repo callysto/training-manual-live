@@ -29,14 +29,9 @@ There are other options for interacting with GitHub as well. Please see [this pa
 It may be necessary or convenient to be able to run examples or develop on a local copy on your computer/laptop. This might be because you expect to be working without internet access, 
 or working with complex git branches. Jupyter is easy to run after pip installing it, but it is best to match the entire environment (libraries, os, python version, etc.) 
 as the Callysto Hub. The docker images used are hosted on the [callysto docker hub](https://hub.docker.com/u/callysto) and uses the [callysto/pims-r](https://hub.docker.com/r/callysto/pims-r/tags) 
-image. This does require [installing docker](https://docs.docker.com/get-docker/) first. After installing docker (for docker-desktop make sure it is running) simply running:
-```
-docker run -it callysto/pims-r:latest
-```
-will start jupyter with all the correct libraries and software installed.
+image. This does require [installing docker](https://docs.docker.com/get-docker/) first. 
 
-To also have access to the various callysto notebooks, you also need to clone the github repo. After cloning the repository to a directory, we modify 
-the above command to allow the docker container to use and modify the notebooks and other files. On a *nix system this may look like the following:
+You also need to clone the github repo in the directory you are working. From a terminal on a *nix system, that can look like the following:
 ```
 mkdir Callysto
 cd Callysto
@@ -45,6 +40,7 @@ docker run -it -p 8888:8888 -v "${PWD}":/home/jupyter --name callysto -d --rm ca
 docker logs callysto
 ```
 The options we've added to the `docker run` command do the following:
+ - `-it` adds some terminal "niceness", 
  - `-p 8888:8888` gives access to the default port (8888),
  - `-v "${PWD}":/home/jupyter` shares the file contents with the server,
  - `--name callysto` names the container "callysto",
