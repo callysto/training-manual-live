@@ -57,8 +57,9 @@ cloned.
 
 If using this to develop and work with git branches, 
 care should be taken that resources used do not exceed 
-those available on the Callysto Hub. Disk usage can be checked using, e.g., `du -sh curriculum-notebooks` and cannot exceed 1GB for 
-usage on the Hub. RAM usage can be limited by adding a `-m 4G` to the docker 
+those available on the Callysto Hub: 1GB disk space, 2 GB RAM). 
+Disk usage can be checked using, e.g., `du -sh curriculum-notebooks` and cannot exceed 1GB for 
+usage on the Hub. RAM usage can be limited by adding a `-m 2G` to the docker 
 run command. 
 
 ## Version Control with Jupyter Notebooks
