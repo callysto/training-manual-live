@@ -48,7 +48,9 @@ The options we've added to the `docker run` command do the following:
  - `--rm` removes the container after quitting (lets us re-use the callysto name in other runs).
 
 The port mapping may need to be adjusted if other jupyter servers are running on 
-your machine. The last 3 options itemized above can safely be omitted.
+your machine. The last 3 options itemized above can safely be omitted if you 
+are comfortable managing docker containers, however, the port and volume mapping must
+always be included.
 
 Following successful launch of the container, navigating to `localhost:8888` or using the
 address+token from the logs will start Jupyter in the web browser as expected. Changes
